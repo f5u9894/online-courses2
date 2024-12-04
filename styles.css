@@ -1,0 +1,797 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Poppins', sans-serif; /* خط حديث */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    direction: rtl;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* رأس الصفحة */
+header {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 2px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* قسم الترحيب */
+.hero {
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.hero h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn {
+    background-color: #ff6f61;
+    padding: 12px 25px;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e05245;
+    transform: scale(1.1);
+}
+
+/* قسم الكورسات */
+.courses-preview {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.courses-preview h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.course-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.course-item {
+    background: linear-gradient(120deg, #fdfbfb, #ebedee);
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.course-img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.course-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+    text-align: center;
+}
+
+.course-item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.course-item .btn {
+    background-color: #34c759;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.course-item .btn:hover {
+    background-color: #28a745;
+    transform: scale(1.1);
+}
+
+/* تذييل الصفحة */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+/* التصميم العام */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e7f0);
+    color: #333;
+}
+
+/* رأس الصفحة */
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* قسم التواصل */
+.contact {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    animation: fadeInUp 0.8s ease;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0066cc;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+	text-align:left;
+}
+
+.contact form label {
+    font-size: 0.9rem;
+    color: #444;
+    font-weight: bold;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #f9f9f9;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 10px rgba(0, 102, 204, 0.3);
+}
+
+.contact form button {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #0066cc, #004c99);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    transform: translateY(-3px);
+    background: #003366;
+}
+input::placeholder {
+    text-align: left;
+}
+textarea::placeholder{
+	text-align: left;
+}
+
+/* خريطة جوجل */
+.map {
+    margin-top: 40px;
+}
+
+.map h3 {
+    text-align: center;
+    color: #0066cc;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.map iframe {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease;
+}
+
+/* تأثيرات ديناميكية */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* تصميم متجاوب */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+}
+/* إعدادات عامة للصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb;
+}
+
+/* courses  :تصميم رأس الصفحة */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* تنسيق قائمة الكورسات (بطاقات الكورسات) */
+.course-table {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.course-table h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff; 
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), /* ظل أسود قوي */
+                -2px -2px 5px rgba(255, 255, 255, 0.7);
+				
+}
+
+.course-table p {
+    text-align: center;
+    color: #AAAAAA;
+    margin-bottom: 40px;
+    font-size: 1rem;
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), /* ظل أسود قوي */
+                -2px -2px 5px rgba(255, 255, 255, 0.7);
+}
+
+/* شبكة عرض الكورسات */
+.course-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+/* تصميم بطاقة الكورس */
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-card h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #333;
+    padding: 15px 0;
+}
+
+.course-card p {
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #777;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.course-card button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #003366;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.course-card button:hover {
+    background-color: #ffcc00;
+    transform: translateY(-3px);
+}
+
+/* تذييل الصفحة */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+/* قاعدة الأنماط الأساسية */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ترويسة الصفحة */
+header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* القسم الرئيسي لتفاصيل الكورسات */
+.course-details {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-details h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ecf0f1;
+    text-align: left;
+}
+
+table th {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #ecf0f1;
+}
+
+/* إضافة تأثيرات ديناميكية على الأزرار */
+button {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+/* تصميم الفئات الجانبية داخل الكورسات */
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+ul li {
+    list-style: disc;
+    margin-bottom: 8px;
+}
+
+/* تصميم الفئات لكل كورس بشكل مختلف */
+#programming-details, #graphic-design-details, #marketing-details {
+    margin-bottom: 60px;
+}
+
+#programming-details {
+    background-color: #ecf0f1;
+}
+
+#graphic-design-details {
+    background-color: #f9e79f;
+}
+
+#marketing-details {
+    background-color: #f5b7b1;
+}
+
+/* إضافة تأثيرات عند التمرير على الجداول */
+table th, table td {
+    transition: background-color 0.3s ease;
+}
+
+table tr:nth-child(even):hover th, table tr:nth-child(even):hover td {
+    background-color: #d5d8dc;
+}
+
+/* footer */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+/* تحسينات متجاوبة */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .course-card img {
+        height: 150px;
+    }
+
+    .course-table h2 {
+        font-size: 1.6rem;
+    }
+
+    .course-card button {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+/* تصميم الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #003366;
+    color: #fff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+td[rowspan] {
+    vertical-align: middle;
+    background-color: #f1f1f1;
+}
+
+td[colspan] {
+    background-color: #f1f1f1;
+}
+
+td:hover {
+    background-color: #f0f0f0;
+}
+/* تصميم الفيديو */
+.intro-video {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.intro-video h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.intro-video video {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* تصميم الصوت */
+.audio-intro {
+    text-align: center;
+    margin: 40px auto;
+}
+
+
+.audio-intro audio {
+    margin: 20px 0;
+}
+/* إخفاء قسم الكورسات بشكل افتراضي */
+.hidden {
+    display: none;
+}
+
+/* تصميم الزر */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <div class="logo">
+            <h1>Online Courses</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم الترحيب -->
+    <section class="hero">
+        <h2>Start Your Learning Journey With Us</h2>
+        <p>Your choice of the right course is a step towards success. Get access to the best courses in various fields!</p>
+        <button id="browse-courses-btn" class="btn">Browse Courses</button>
+    </section>
+
+	<!-- قسم الفيديو التمهيدي -->
+    <section class="intro-video">
+        <h2>Welcome to Online Courses</h2>
+        <video controls width="600">
+            <source src="welcome1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Watch this video to learn more about what we offer.</p>
+    </section>
+
+    <!-- قسم الكورسات (مخفي افتراضيًا) -->
+    <section class="courses-preview hidden" id="courses-section" >
+        <h2 id="homeback">Top Available Courses</h2>
+        <div class="course-list">
+            <div class="course-item">
+                <img src="Learn.jpg" alt="Programming Course" class="course-img">
+                <h3>Learn Programming</h3>
+                <p>An introductory course for new programmers to learn the basics of programming.</p>
+                <a href="courses.html" class="btn">View Course</a>
+            </div>
+            <div class="course-item">
+                <img src="Online.avif" alt="Marketing Course" class="course-img">
+                <h3>Online Marketing</h3>
+                <p>A comprehensive course to learn modern marketing strategies.</p>
+                <a href="courses.html" class="btn">View Course</a>
+            </div>
+            <div class="course-item">
+                <img src="Graphic.jpg" alt="Graphic Design Course" class="course-img">
+                <h3>Graphic Design</h3>
+                <p>An introductory course for beginners in graphic design and tool usage.</p>
+                <a href="courses.html" class="btn">View Course</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>&copy; 2024 Online Courses. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+	
+</body>
+</html>
